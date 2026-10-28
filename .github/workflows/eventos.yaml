@@ -1,6 +1,7 @@
 name: Identifica Evento
 on:
   push:
+    branches: [ main ]
   pull_request:
   issues:
   issue_comment:
