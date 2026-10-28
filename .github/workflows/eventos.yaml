@@ -1,0 +1,16 @@
+name: Identifica Evento
+on:
+  push:
+  pull_request:
+  issues:
+  issue_comment:
+  create:
+  delete:
+  fork:
+  workflow_dispatch:
+jobs:
+  event_trigger:
+    name: Show event trigger
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Trigado por ${{ github.event_name }}"
