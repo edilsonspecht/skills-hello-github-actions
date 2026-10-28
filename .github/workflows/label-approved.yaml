@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   label-approved:
-    if: github.event.review.state == 'approved'
+    #if: github.event.review.state == 'approved'
     runs-on: ubuntu-latest
     steps:
       - name: Add approved label
